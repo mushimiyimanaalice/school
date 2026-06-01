@@ -1,0 +1,49 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary: #516063;
+  --color-primary-dark: #394a44;
+  --color-primary-darker: #262f2c;
+  --color-primary-darkest: #1a2220;
+  --color-primary-light: #a0b4b0;
+  --color-primary-lighter: #c5d1cd;
+  --color-primary-lightest: #e8eee9;
+  --color-secondary: #e9556d;
+  --color-secondary-dark: #d43d56;
+  --color-secondary-darker: #b83248;
+  --color-secondary-light: #f09caa;
+  --color-cream: #f4f7e6;
+  --color-bg-light: #fafcf4;
+  --color-accent: #e2e8c8;
+
+  --font-sans: 'Poppins', sans-serif;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+.font-brand {
+  font-family: 'Saira Stencil', sans-serif;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #516063 !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #516063 !important;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  ring: 2px solid #516063;
+  border-color: #516063;
+}
